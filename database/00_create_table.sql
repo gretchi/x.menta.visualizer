@@ -1,5 +1,6 @@
-CREATE TABLE tweets (
-        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE IF NOT EXISTS tweets (
+        id INTEGER NOT NULL PRIMARY KEY,
+        account TEXT NOT NULL,
         fav INTEGER NOT NULL,
         rt INTEGER NOT NULL,
         tweet TEXT,

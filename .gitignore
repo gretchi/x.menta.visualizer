@@ -177,3 +177,7 @@ cython_debug/
 # Project defined
 tweets*.js
 tweets*.txt
+prompts.txt
+
+exclude/
+tweets/

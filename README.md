@@ -41,13 +41,13 @@ EOF
 .mode column
 
 SELECT
-    strftime('%Y-%m-%d', created_at) as day,
+    strftime('%Y-%m', created_at) as month,
     COUNT(*) as cnt,
-    avg(fav) as avg_fav,
-    avg(rt) as avg_rt
+    avg(fav),
+    avg(rt)
 FROM tweets
 WHERE fav < 100
-GROUP BY strftime('%Y-%m-%d', created_at)
+GROUP BY strftime('%Y-%m', created_at)
 ORDER BY created_at ASC;
 
 
