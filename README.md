@@ -16,6 +16,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 sudo nvidia-smi --gpu-reset -i 0
 watch nvidia-smi
 
+## 注意
+
+ご自身のデータ解析にのみ使用してください。
+倫理的な取り扱いをお願い申し上げます。
 
 ## 分析用SQL
 
